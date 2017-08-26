@@ -1,7 +1,7 @@
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, th, td, p, img{margin: 0;padding: 0;}
 body, input, textarea{font-size: 12px;}
 fieldset, img {border:none;}
-img{display: block;}
+img{display: block;border: none;}
 ul, ol, dl, dt, dd {list-style:none; }
 a{text-decoration: none;display: block;outline: none;}
 input, button, select, textarea{outline: none;}
@@ -166,13 +166,15 @@ strong, b{font-weight: bold;}
 .nav{
     width: 100%;
     height: 38px;
-//  background-color: #f7f9f8;
-    background-color: pink;
+    background-color: #f7f9f8;
     .list{
         width: 180px;
         height: 38px;
         background-color: #008842;
         margin-left: 32px;
+        &:hover .son{
+            display: block;
+        }
         .one{
             font-size: 7px;
             color: white;
@@ -180,19 +182,33 @@ strong, b{font-weight: bold;}
             text-align: center;
         }
         .son{
+            display: none;
             width: 180px;
             height: 460px;
             background: rgba(255, 255, 255, 0.9);
-            border: 1px solid red;
+            border: 1px solid #bbbbbb;
             li{
                 padding: 20px 0;
                 width: 180px;
                 position: relative;
+                &:hover p{
+                    display: block;
+                }
+                &:hover .sub-item{
+                    display: block;
+                }
+                &:hover{
+                    background: rgba(255, 255, 255, 0.7);
+                }
+                &:hover a{
+                    padding: 0px 10px;
+                }
                 a{
                     width: 180px;
                     height: 25px;
                     color: black;
                     b{
+                        float: left;
                         display: block;
                         font-weight: normal;
                         width: 55px;
@@ -200,6 +216,9 @@ strong, b{font-weight: bold;}
                         line-height: 25px;
                         text-align: center;
                         margin-left: 53px;
+                        &:hover{
+                            color: #008842;
+                        }
                     }
                     span{
                         position: absolute;
@@ -211,9 +230,164 @@ strong, b{font-weight: bold;}
                     }
                 }
             }
-        .li1{
-            
+        .li1 span{
+            background-position: -22px 0;
         }
+        .li2 span{
+            background-position: -46px 0;
+        }
+        .li3 span{
+            background-position: -70px 0;
+        }
+        .li4 span{
+            background-position: -95px 0;
+        }
+        .li5 span{
+            background-position: -119px 0;
+        }
+        .li6 span{
+            background-position: -142px 0;
+        }
+        .li7 span{
+            background-position: -168px 0;
+        }
+        p{
+            display: none;
+            float: right;
+            position: absolute;
+            margin-left: 145px;
+            margin-top: -20px;
+        }
+        .sub-item{
+            display: none;
+        }
+        .li1 .sub-item{
+            position: absolute;
+            width: 260px;
+            height: 465px;
+            border: 1px solid #bbbbbb;
+            margin-left: 180px;
+            margin-top: -85px;
+            padding: 17px 20px;
+            background: rgba(255,255,255,0.9);
+        }
+        .li2 .sub-item{
+            position: absolute;
+            width: 260px;
+            height: 465px;
+            border: 1px solid #bbbbbb;
+            margin-left: 180px;
+            margin-top: -149px;
+            padding: 17px 20px;
+            background: rgba(255,255,255,0.9);
+        }
+        .li3 .sub-item{
+            position: absolute;
+            width: 260px;
+            height: 465px;
+            border: 1px solid #bbbbbb;
+            margin-left: 180px;
+            margin-top: -215px;
+            padding: 17px 20px;
+            background: rgba(255,255,255,0.9);
+        }
+        .li4 .sub-item{
+            position: absolute;
+            width: 260px;
+            height: 465px;
+            border: 1px solid #bbbbbb;
+            margin-left: 180px;
+            margin-top: -280px;
+            padding: 17px 20px;
+            background: rgba(255,255,255,0.9);
+        }
+        .li5 .sub-item{
+            position: absolute;
+            width: 260px;
+            height: 465px;
+            border: 1px solid #bbbbbb;
+            margin-left: 180px;
+            margin-top: -345px;
+            padding: 17px 20px;
+            background: rgba(255,255,255,0.9);
+        }
+        .li6 .sub-item{
+            position: absolute;
+            width: 260px;
+            height: 465px;
+            border: 1px solid #bbbbbb;
+            margin-left: 180px;
+            margin-top: -410px;
+            padding: 17px 20px;
+            background: rgba(255,255,255,0.9);
+        }
+        .li7 .sub-item{
+            position: absolute;
+            width: 260px;
+            height: 465px;
+            border: 1px solid #bbbbbb;
+            margin-left: 180px;
+            margin-top: -475px;
+            padding: 17px 20px;
+            background: rgba(255,255,255,0.9);
+        }
+        h4{
+            text-decoration: underline;
+            font-weight: normal;
+            font-size: 18px;
+            a{
+                color: #20985a;
+            }
+        }
+        .sub-list{
+            width: 260px;
+            height: 230px;
+            display: block;
+        }
+        .sub-list a{
+            display: inline-block;
+            width: 70px;
+            padding: 15px 0;
+            color: #686868;
+            &:hover{
+                color: #008842;
+                font-weight: bolder;
+            }
+        }
+        .catalogs-ad{
+            position: absolute;
+            bottom: 10px;
+            a{
+                color: #444444;
+                text-decoration: none;
+                outline: none;
+                img{
+                    position: absolute;
+                    margin-top: -190px;
+                }
+            }
+        }
+        }
+    }
+    .heng{
+        float: left;
+        width: 435px;
+        height: 38px;
+        margin-left: 213px;
+        margin-top: -38px;
+        li{
+            float: left;
+            line-height: 38px;
+            text-align: center;
+            padding: 0 26px;
+            a{
+                color: black;
+                font-size: 14px;
+                font-weight: bolder;
+                &:hover{
+                    color: #008842;
+                }
+            }
         }
     }
 }

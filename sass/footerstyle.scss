@@ -1,0 +1,160 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, th, td, p, img{margin: 0;padding: 0;}
+body, input, textarea{font-size: 12px;}
+fieldset, img {border:none;}
+img{display: block;border: none;}
+ul, ol, dl, dt, dd {list-style:none; }
+a{text-decoration: none;display: block;outline: none;}
+input, button, select, textarea{outline: none;}
+input{vertical-align: middle;}
+strong, b{font-weight: bold;}
+div, p{display: block;}
+
+//尾部板块
+.footer-service{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 103px;
+    background-color: #e0e0e0;
+    .wrap{
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .s1{
+        background-position: 0 0;
+    }
+    .s2{
+        background-position: 0 -42px;
+    }
+    .s3{
+        background-position: 0 -84px;
+    }
+    .s4{
+        background-position: 0 -126px;
+    }
+    li{
+        float: left;
+        width: 190px;
+        height: 42px;
+        margin-left: 55px;
+        padding-left: 55px;
+        background: url(../images/footer_service_icon.png) no-repeat left top;
+        b{
+            display: block;
+            padding-left: 15px;
+            color: #007f4d;
+            font-weight: normal;
+            font-size: 18px;
+            border-left: 1px solid #a6a6a6;
+        }
+        span{
+            display: block;
+            padding-left: 15px;
+            border-left: 1px solid #a6a6a6;
+        }
+    }  
+}
+
+//尾部列表
+.footer{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 410px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    border-top: 1px solid #e0e0e0;
+    .wrap{
+        width: 1200px;
+        height: 360px;
+        margin-top: 50px;
+        margin: 50px auto 0;
+    }
+    dl{
+        width: 190px;
+        float: left;
+        margin-left: 50px;
+        display: inline;
+        p{
+            display: block;
+        }
+        dt{
+            height: 23px;
+            line-height: 23px;
+            font-size: 14px;
+            text-indent: 40px;
+            background: url(../images/footer_icon.png) no-repeat;
+        }
+        dd{
+            border-left: 1px dashed #a8a8a8;
+            padding-left: 20px;
+            height: 110px;
+            min-height: 110px;
+            margin: 15px 0 0 13px;
+            display: block;
+            a{
+                color: #575556;
+                line-height: 22px;
+            }
+        }
+    }
+    .col1 dt{
+        background-position: 0 0;
+    }
+    .col2 dt{
+        background-position: 0 -23px;
+    }
+    .col3 dt{
+        background-position: 0 -46px;
+    }
+    .col4 dt{
+        background-position: 0 -69px;
+    }
+    .col5 dt{
+        background-position: 0 -92px;
+    }
+    .service{
+        position: absolute;
+        margin-top: 170px;
+        width: 1200px;
+        height: 96px;
+        display: block;
+        text-align: center;
+        color: #008842;
+        font-size: 14px;
+        span{
+            display: inline-block;
+            padding: 0 10px;
+            height: 96px;
+            line-height: 96px;
+            text-align: center;
+        }
+    }
+    .copyright{
+        display: block;
+        position: absolute;
+        width: 1200px;
+        height: 98px;
+        color: #717171;
+        text-align: center;
+        line-height: 22px;
+        margin-top: 265px;
+        a{
+            display: inline-block;
+            color: #717171;
+            &:hover{
+                color: #008842;
+            }
+        }
+    }
+    .picture{
+        display: block;
+    }
+    .picture a{
+        display: inline-block;
+    }
+}
+
+
+
