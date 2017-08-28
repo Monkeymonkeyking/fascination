@@ -35,6 +35,7 @@ div, p { display: block; }
 .footer dl dt { height: 23px; line-height: 23px; font-size: 14px; text-indent: 40px; background: url(../images/footer_icon.png) no-repeat; }
 .footer dl dd { border-left: 1px dashed #a8a8a8; padding-left: 20px; height: 110px; min-height: 110px; margin: 15px 0 0 13px; display: block; }
 .footer dl dd a { color: #575556; line-height: 22px; }
+.footer dl dd a:hover { color: #008842; }
 .footer .col1 dt { background-position: 0 0; }
 .footer .col2 dt { background-position: 0 -23px; }
 .footer .col3 dt { background-position: 0 -46px; }

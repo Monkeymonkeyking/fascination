@@ -1,0 +1,12 @@
+//requirejs的配置
+require.config({
+	baseUrl:"/",
+	paths:{
+		"template":"lib/arttemplate/template-native",
+		"jquery":"lib/jquery/jquery-3.2.1",
+		"cookie":"lib/jquery_plugins/jquery.cookie",
+		"zoom":"lib/jquery_plugins/jquery.elevateZoom-2.2.3.min",
+		"fly":"lib/jquery_plugins/jquery.fly.min",
+		"load":"js/loadHeaderFooter"
+	}
+});

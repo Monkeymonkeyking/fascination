@@ -1,0 +1,10 @@
+define(["jquery","cookie"],function($){
+	$.ajax({
+		type:"get",
+		url:"/html/include/header.html",
+		success:function(data){
+			console.log(data);
+			$(data).appendTo(".header");
+		}
+	})
+});
