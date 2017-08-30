@@ -28,11 +28,11 @@ strong, b { font-weight: bold; }
 .top .box ul li:hover .con { display: block; }
 .top .box ul li a { display: block; color: #444444; }
 .top .box ul li a:hover { font-weight: bolder; color: #008842; }
-.top .box ul .myyiguo .con { display: none; position: absolute; top: 30px; left: 850px; border: 1px solid #B4C1A3; background: #FFFFFF; width: 100px; padding: 5px 12px; text-align: left; }
+.top .box ul .myyiguo .con { z-index: 999; display: none; position: absolute; top: 30px; left: 850px; border: 1px solid #B4C1A3; background: #FFFFFF; width: 100px; padding: 5px 12px; text-align: left; }
 .top .box ul .myyiguo .con a { display: block; line-height: 25px; color: #727272; }
 .top .box ul .myyiguo .con a:hover { color: #008842; }
 .top .box ul .mobile:hover .con { opacity: 1; }
-.top .box ul .mobile .con { opacity: 0; width: 125px; padding: 10px; line-height: 25px; display: block; position: absolute; top: 30px; left: 900px; border: 1px solid #B4C1A3; background: #FFFFFF; }
+.top .box ul .mobile .con { z-index: 999; opacity: 0; width: 125px; padding: 10px; line-height: 25px; display: block; position: absolute; top: 30px; left: 900px; border: 1px solid #B4C1A3; background: #FFFFFF; }
 .top .box ul .mobile .item { margin: 5px 0; }
 
 .search-box { margin: 0 auto; overflow: hidden; width: 100%; height: 80px; background-color: #E0E0E0; }

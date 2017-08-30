@@ -1,0 +1,58 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, th, td, p, img{margin: 0;padding: 0;}
+body, input, textarea{font-size: 12px;}
+fieldset, img {border:none;}
+img{display: block;border: none;}
+ul, ol, dl, dt, dd {list-style:none; }
+a{text-decoration: none;display: block;outline: none;}
+input, button, select, textarea{outline: none;}
+input{vertical-align: middle;}
+strong, b{font-weight: bold;}
+div, p{display: block;}
+
+.clearfix:after, .wrap:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.wrap{
+    background: #f7f9f8;
+    overflow: hidden;
+    position: relative;
+    margin-left: 32px;
+    width: 100%;
+    margin: 0 auto;
+    .crumbs{
+        margin: 10px 0;
+        margin-left: 22px;
+        a{
+            display: inline-block;
+            margin: 0 10px;
+            color: #444444;
+            text-decoration: none;
+            &:hover{
+                color: #008842;
+            }
+        }
+    }
+    .fangdajing{
+        margin-left: -66px;
+        margin-top: -100px;
+    }
+}
+.content{
+    position: relative;
+    width: 1200px;
+    height: 600px;
+}
+
+
+
+
+
+
+
+
+

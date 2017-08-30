@@ -79,11 +79,6 @@ require(["config"],function(){
 				}
 	}
 		
-		
-		
-		
-
-		
 		//楼层导航
 		$(function(){
 			var winHeight = $(window).height();
@@ -124,13 +119,6 @@ require(["config"],function(){
 				$(this).children("span").hide();
 			});
 		});
-		
-		
-		
-		
-		
-		
-		
 		
 	});
 })

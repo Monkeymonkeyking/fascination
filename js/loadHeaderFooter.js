@@ -12,5 +12,12 @@ define(["jquery","cookie"],function($){
 		success:function(datatwo){
 			$(datatwo).appendTo(".footer");
 		}
+	}),
+	$.ajax({
+		type:"get",
+		url:"/html/include/magnifier.html",
+		success:function(datathree){
+			$(datathree).appendTo(".fangdajing");
+		}
 	})
 });
