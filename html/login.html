@@ -37,6 +37,11 @@
 								<a class="green" href="#">立即注册</a>
 							</span>
 						</p>
+						<div id="msg-wrap" class="msg-wrap">
+							<div id="msg-error">
+								<span id="msg-error-choose"></span>
+							</div>
+						</div>
 						<p>
 							<span class="input-phone-icon">&nbsp;</span>
 							<input class="input input-phone" id="UserName" name="UserName" placeholder="邮箱/账号/已验证手机" type="text"/>
@@ -46,7 +51,8 @@
 							<input class="input input-key" id="Pwd" name="Pwd" placeholder="密码" type="password"/>
 						</p>
 						<p>
-							<input class="input input-key" placeholder="验证码" style="width: 100px;" type="text"/>
+							<input class="input input-key" placeholder="验证码" style="width: 100px;" type="text" id="key"/>
+							<span id="ukey"></span>
 						</p>
 						<label>
 							<input class="remeber" type="checkbox"/>记住用户名
@@ -54,8 +60,10 @@
 						<span>
 							<a href="#" class="forget">忘记登录密码？</a>
 						</span>
+
 						<p class="btn">
-							<a href="#" id="btnLogin" class="btn-green-1">登 &nbsp;录</a>
+							<!--<a href="#" id="btnLogin" class="btn-green-1">登 &nbsp;录</a>-->
+							<button id="btnLogin" class="btn-green-1">登 &nbsp;录</button>
 						</p>
 						<p>第三方登录</p>
 						<div class="p-code-btn">
@@ -76,6 +84,54 @@
 		
 		<!--尾部-->
 		<div class="footer"></div>
+		
+		
+		<!--正则表达式验证-->
+		<script type="text/javascript" src="../js/tools.js"></script>
+		<script type="text/javascript">
+			function ckUser(){
+			var reg = new RegExp("^\\w{6,14}$");
+			return reg.test($("#UserName").value);
+		}
+		function ckPwd(){
+			var reg = /^.{6,}/;
+			return reg.test($("#Pwd").value);
+		}
+		window.onload=function(){
+			var count = 0,
+				str = "";
+			while (count < 4){
+				var rand = Math.floor(Math.random() * 75) + 48;
+				if (rand >= 48 && rand <= 57
+					|| rand >= 65 && rand <= 90
+					|| rand >= 97 && rand <= 122) {
+					count++;
+					str += String.fromCharCode(rand);
+				}
+			}
+			console.log(str);
+			$("#ukey").innerHTML=str;
+		}
+		$("#btnLogin").onclick=function(e){
+			console.log("yyy");
+			if($("#key").value !== $("#ukey").innerHTML){
+				e.preventDefault();
+				$("#msg-error").style.display="block";
+				$("#msg-error-choose").innerHTML="验证码输入有误，请重新输入！";
+			}
+			else if(!ckPwd() || !ckUser()){
+				e.preventDefault();
+				$("#msg-error").style.display="block";
+				$("#msg-error-choose").innerHTML="用户名或密码错误，请重新输入！";
+			}else{
+				var  _tel= $("#UserName").value;
+				setCookie("loginUser", _tel, {expires:1});
+				location="http://127.0.0.1:8080/index.html";
+			}
+		};
+		</script>
+		
+		
 		
 	</body>
 </html>

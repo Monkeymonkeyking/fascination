@@ -3,8 +3,14 @@ define(["jquery","cookie"],function($){
 		type:"get",
 		url:"/html/include/header.html",
 		success:function(data){
-			console.log(data);
 			$(data).appendTo(".header");
+		}
+	}),
+	$.ajax({
+		type:"get",
+		url:"/html/include/footer.html",
+		success:function(datatwo){
+			$(datatwo).appendTo(".footer");
 		}
 	})
 });

@@ -30,7 +30,10 @@ div, p { display: block; }
 
 .fr { width: 350px; height: 430px; border: 1px solid #e3e6e0; float: right; padding-right: 105px; }
 .fr .login-main { width: 310px; height: 385px; margin-left: 75px; margin-top: 25px; background: #FFFFFF; }
-.fr .login-main p { margin-bottom: 20px; font-size: 12px; color: #878787; position: relative; overflow: hidden; width: 100%; }
+.fr .login-main #msg-wrap { height: auto !important; margin: 2px 0px 5px; min-height: 30px; }
+.fr .login-main #msg-wrap #msg-error { display: none; position: relative; background: #FFEBEB none repeat scroll 0% 0%; border: 1px solid #E4393C; padding: 3px 10px 3px 40px; line-height: 18px; min-height: 18px; color: #E4393C; }
+.fr .login-main #ukey { border: 1px solid #c1c1c1; background-color: #FFFFFF; width: 130px; height: 38px; font-size: 14px; }
+.fr .login-main p { margin-bottom: 18px; font-size: 12px; color: #878787; position: relative; overflow: hidden; width: 100%; }
 .fr .login-main p strong { color: #262626; font-size: 18px; }
 .fr .login-main p span { float: left; position: absolute; right: 0; top: 0; }
 .fr .login-main p span a { display: inline-block; text-decoration: underline; color: #008842; outline: none; }
@@ -50,7 +53,7 @@ label .remeber { margin-right: 9px; height: 14px; width: 14px; vertical-align: -
 .forget { float: right; display: block; color: #878787; }
 
 .btn { margin-top: 15px; }
-.btn .btn-green-1 { background: #008842; width: 310px; height: 50px; line-height: 50px; display: inline-block; text-align: center; color: #FFFFFF; font-size: 18px; font-weight: bolder; }
+.btn .btn-green-1 { cursor: pointer; background: #008842; width: 310px; height: 50px; line-height: 50px; display: inline-block; text-align: center; color: #FFFFFF; font-size: 18px; font-weight: bolder; border: none; }
 
 .p-code-btn { float: left; display: block; width: 310px; height: 30px; }
 .p-code-btn a { display: inline-block; color: #333333; cursor: auto; }

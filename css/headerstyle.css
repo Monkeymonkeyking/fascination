@@ -55,7 +55,7 @@ strong, b { font-weight: bold; }
 .nav .list { width: 180px; height: 38px; background-color: #008842; margin-left: 32px; }
 .nav .list:hover .son { display: block; }
 .nav .list .one { font-size: 7px; color: white; line-height: 38px; text-align: center; }
-.nav .list .son { display: none; width: 180px; height: 460px; background: rgba(255, 255, 255, 0.9); border: 1px solid #bbbbbb; }
+.nav .list .son { display: none; width: 180px; height: 460px; background: rgba(255, 255, 255, 0.9); border: 1px solid #bbbbbb; position: absolute; z-index: 999; }
 .nav .list .son li { padding: 20px 0; width: 180px; position: relative; }
 .nav .list .son li:hover p { display: block; }
 .nav .list .son li:hover .sub-item { display: block; }

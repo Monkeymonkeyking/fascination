@@ -28,7 +28,7 @@ div, p { display: block; }
 .footer-service li b { display: block; padding-left: 15px; color: #007f4d; font-weight: normal; font-size: 18px; border-left: 1px solid #a6a6a6; }
 .footer-service li span { display: block; padding-left: 15px; border-left: 1px solid #a6a6a6; }
 
-.footer { display: block; position: relative; width: 100%; height: 410px; overflow: hidden; padding-bottom: 20px; border-top: 1px solid #e0e0e0; }
+.footer { display: block; position: relative; width: 100%; height: 410px; padding-bottom: 20px; border-top: 1px solid #e0e0e0; }
 .footer .wrap { width: 1200px; height: 360px; margin-top: 50px; margin: 50px auto 0; }
 .footer dl { width: 190px; float: left; margin-left: 50px; display: inline; }
 .footer dl p { display: block; }

@@ -239,6 +239,8 @@ strong, b{font-weight: bold;}
             height: 460px;
             background: rgba(255, 255, 255, 0.9);
             border: 1px solid #bbbbbb;
+            position: absolute;
+            z-index: 999;
             li{
                 padding: 20px 0;
                 width: 180px;

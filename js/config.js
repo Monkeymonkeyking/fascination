@@ -8,5 +8,6 @@ require.config({
 		"zoom":"lib/jquery_plugins/jquery.elevateZoom-2.2.3.min",
 		"fly":"lib/jquery_plugins/jquery.fly.min",
 		"load":"js/loadHeaderFooter"
+		"tool":"js/tools"
 	}
 });

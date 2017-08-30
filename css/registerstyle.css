@@ -39,6 +39,7 @@ div, p { display: block; }
 .bigbox .smallbox .fl .btn-green-1 { background: #008842; width: 306px; height: 50px; line-height: 50px; display: inline-block; text-align: center; color: #FFFFFF; font-size: 18px; }
 .bigbox .smallbox .fr { width: 330px; height: 340px; position: relative; text-align: center; padding-top: 50px; float: right; font-size: 14px; }
 .bigbox .smallbox .fr .rimg { position: absolute; left: -140px; top: 70px; }
+.bigbox .smallbox .gray { color: #666666; display: inline-block; }
 
 .btn-yzm { display: inline-block; width: 121px; height: 38px; line-height: 38px; text-align: center; color: #008842; background-color: #f7f7f7; border: 1px solid #C1C1C1; margin-right: 20px; }
 
