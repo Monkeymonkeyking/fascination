@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/cartstyle.css"/>
+		<script src="../lib/requirejs/require.js" type="text/javascript" data-main="../js/cart"></script>
+	</head>
+	<body>
+		
+		
+		<!--顶部-->
+		<div class="top">
+			<div class="wrap">
+				<div class="logo">
+					<a href="http://127.0.0.1:8080/index.html" target="_blank"></a>
+				</div>
+			</div>
+		</div>
+		
+		<!--我的购物车-->
+		<div class="cart">
+			<div class="wrap">
+				<h2>
+					我的购物车
+					<a class="on-shopping" href="http://127.0.0.1:8080/html/list.html">继续购物>>></a>
+				</h2>
+				<div class="cart-alert">
+					<div class="cart-header">
+						<table class="cart-table">
+							<tbody>
+								<tr>
+									<th class="cart-t-check">
+										<label>
+											<input type="checkbox" checked="checked" class="chkAll" id="chk_all"/>
+											全选
+										</label>
+									</th>
+									<th class="cart-t-info">商品信息</th>
+									<th class="cart-t-ub" style="width:75px;">悠币</th>
+									<th class="cart-t-price">单价</th>
+									<th class="cart-t-num">购买数量</th>
+									<th class="cart-t-total">合计</th>
+									<th class="cart-t-spec">规格</th>
+									<th class="cart-t-opera">操作</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--分割-->
+					<!--<div class="cart-list" id="theInsulationCan">
+						<table class="cart-table">
+							<tbody>
+								<tr>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>-->
+					
+				</div>
+			</div>
+		</div>
+	
+	
+	
+		<!--初始购物车-->
+		<div class="cart-list" id="theInsulationCan">
+			<!--<div>
+				<span><label><input type="checkbox" id="chk_all">全选</label></span>
+				<span>商品编号</span>
+				<span>图片</span>
+				<span>描述</span>
+				<span>单价</span>
+				<span>数量</span>
+				<span>小计</span>
+				<span>操作</span>
+			</div>-->
+			<div class="cart_body"></div>
+			合计金额：<span class="total">0</span>
+		</div>
+		
+		<!--模板引擎-->
+		<script type="text/html" id="cart_template">
+			<% 
+				for (var i = 0, len = products.length; i < len; i++) {
+					var prod = products[i];
+			%>
+			<div class="row">
+				<span><input type="checkbox" class="chk_prod"></span>
+				<span class="id"><%= prod.id %></span>
+				<span><img src="<%= prod.imgSrc %>"></span>
+				<span class="cart-t-info"><%= prod.title %></span>
+				<span class="price"><%= prod.price %></span>
+				<span><span class="minus">-</span><input type="text" size="1" value="<%= prod.amount %>" class="amount"><span class="add">+</span></span>
+				<span class="sub"><%= prod.price * prod.amount %></span>
+				<span><a href="javascript:void(0)">删除</a></span>
+			</div>
+			<% } %>
+		</script>
+
+
+	</body>
+</html>

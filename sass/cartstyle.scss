@@ -1,0 +1,134 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, th, td, p, img{margin: 0;padding: 0;}
+body, input, textarea{font-size: 12px;}
+fieldset, img {border:none;}
+img{display: block;border: none;}
+ul, ol, dl, dt, dd {list-style:none; }
+a{text-decoration: none;display: block;outline: none;}
+input, button, select, textarea{outline: none;}
+input{vertical-align: middle;}
+strong, b{font-weight: bold;}
+div, p{display: block;}
+
+.cart-table th.cart-t-check, .cart-table td.cart-t-check{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.on-shopping{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #008842;
+    text-indent: 0;
+    text-decoration: underline;
+    margin-right: 22px;
+}
+
+.cart-alert{
+    border: 1px solid #E3E6E0;
+    border-top: 0;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    .cart-table{
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ebebeb;
+        margin-bottom: 10px;
+        th{
+            height: 40px;
+            background: #F1F1F1;
+            font-size: 12px;
+            color: #262626;
+            text-align: center;
+            padding: 0 10px;
+        }
+        input{
+            margin-right: 20px;
+            vertical-align: middle;
+            font-size: 12px;
+        }
+        .cart-t-price{
+            width: 100px;
+            color: #262626;
+            font-size: 14px;
+            line-height: 1em;
+        }
+        .cart-t-num{
+            width: 110px;
+            color: #262626;
+            font-size: 12px;
+        }
+        .cart-t-total{
+            width: 110px;
+            color: #e93005;
+            font-size: 14px;
+            line-height: 1em;
+        }
+        .cart-t-spec{
+            width: 110px;
+            color: #262626;
+            font-size: 12px;
+        }
+        .cart-t-opera{
+            width: 110px;
+            color: #262626;
+            font-size: 12px;
+        }
+    }
+}
+
+.row{
+    .id{
+        display: none;
+    }
+}
+
+.cart_body{
+    width: 100%;
+    border: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+.row{
+    span{
+        border-top: 1px solid #EBEBEB;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.row{
+    span:nth-child(1){
+        width: 20px;
+    }
+    span:nth-child(3){
+        width: 80px;
+        position: relative;
+        img{
+            width: 80px;
+            height: 80px;
+            border: 1px solid #EBEBEB;
+            position: relative;
+        }
+    }
+    .cart-t-info{
+        text-align: left;
+        font-size: 14px;
+        color: #444444;
+    }
+    .price{
+        width: 100px;
+        color: #262626;
+        font-size: 14px;
+        line-height: 1em;
+    }
+    .quantity-form{
+        
+    }
+}
+
+.chk_prod{
+    width: 20px;
+    text-align: left;
+    padding-left: 20px;
+}

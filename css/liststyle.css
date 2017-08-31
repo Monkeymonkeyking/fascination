@@ -46,3 +46,14 @@ div, p { display: block; }
 .filter .filter_sort .price i { background-position: -20px 0; }
 
 i, s { display: inline-block; vertical-align: middle; }
+
+.goods_list { width: 100%; margin-left: 32px; }
+.goods_list .product { margin-bottom: 20px; position: relative; overflow: hidden; border: 1px solid black; float: left; margin-top: 15px; margin-right: 13px; background: #FFFFFF; width: 290px; }
+.goods_list .product .id { display: none; }
+.goods_list .product .fromImg { width: 300px; height: 300px; }
+.goods_list .product .prod_price { font-size: 18px; font-weight: bold; color: #e7380d; }
+.goods_list .product .prod_title { height: 16px; margin-bottom: 10px; line-height: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.goods_list .product a { display: inline-block; display: none; width: 180px; height: 25px; line-height: 25px; text-align: center; color: #FFFFFF; background: #008842; border-radius: 4px; margin-left: 70px; position: absolute; }
+.goods_list .product:hover a { display: block; }
+.goods_list .product .product-info { margin-top: -10px; }
+.goods_list .product .product-info a { margin-top: -20px; }

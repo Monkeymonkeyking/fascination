@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" href="../css/magnifierstyle.css"/>
 		<link rel="stylesheet" href="../css/headerstyle.css"/>
+		<link rel="stylesheet" href="../css/footerstyle.css"/>
 		<link rel="stylesheet" href="../css/detailstyle.css"/>
 		<script src="../lib/requirejs/require.js" data-main="../js/detail"></script>
 	</head>
@@ -60,19 +61,80 @@
 						<div class="summary-other clearfix">
 							<div class="left">
 								<div id="commoditypromotions"></div>
-								
+								<div class="pro-promo clearfix" style="margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px dashed rgb(217, 217, 217);">
+									<ul></ul>
+								</div>
+								<div class="choose clearfix">
+									<div class="dt">规格：</div>
+									<div class="dd">
+										<ul>
+											<li>
+												<a href="#">
+													<span>￥118.00</span>
+													<span>1.05kg/箱</span>
+													<i></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="pro-service">
+									<b>16:00</b>后完成订单 预计
+									<b>9月02日</b>送达
+								</div>
+								<div class="pro-service">
+									<i class="mr5">
+										<img src="../images/icon1.png"/>
+									</i>
+									不支持7天无理由退货
+								</div>
+								<div class="pro-amount clearfix">
+									<div class="dt">数量：</div>
+									<div class="dd">
+										<div class="spinner value" maxlength="2">
+											<button class="decrease" disabled="disabled">-</button>
+											<input class="spinner value" id="p_number" maxlength="2" value="1" type="text"/>
+											<button class="increase">+</button>
+										</div>
+										<div class="addcart">
+											<a class="btn-gn" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'1290961',$('#p_number').val(),app.referCart);">
+												<i></i>加入购物车
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<table class="zx" width="100%" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<th>原产地：</th>
+											<td>山东</td>
+										</tr>
+										<tr>
+											<th>商品编号：</th>
+											<td>1290961</td>
+										</tr>
+										<tr>
+											<th>品牌：</th>
+											<td>优形</td>
+										</tr>
+										<tr>
+											<th>发货地：</th>
+											<td>成都</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
-					
-					
-					
-					
 				</div>
 			</div>
+			<!--下侧-->
 		</div>
 		
-		
-		
+		<!--引入尾部-->
+		<div class="footer"></div>
+				
 	</body>
 </html>

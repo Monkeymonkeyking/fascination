@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" href="../css/headerstyle.css"/>
 		<link rel="stylesheet" href="../css/liststyle.css"/>
+		<link rel="stylesheet" href="../css/footerstyle.css"/>
 		<script src="../lib/requirejs/require.js" data-main="../js/list"></script>
 	</head>
 	<body>
@@ -70,10 +71,28 @@
 				</a>
 			</div>
 		</div>
-		<div class="filter_space"></div>
 		
 		<!--商品列表-->
-		<div class="goods_list clearfix"></div>
+		<div class="goods_list"></div>
 		
+		<!--引入尾部-->
+		<div class="footer"></div>
+		
+		<!--模板引擎-->
+		<script type="text/html" id="lists">
+			<% 
+				for (var i = 0, len = listshuju.length; i < len; i++) {
+					var prod = listshuju[i];
+			%>
+			<div class="product">
+				<span class="id"><%= prod.id %></span>
+				<span class="fromImg"><img src="<%= prod.imgSrc %>"></span><br />
+				<a href="">加入购物车</a><br />
+				<span class="prod_title"><%= prod.title %></span><br />
+				<span class="prod_price"><%= prod.price %></span><br />
+			</div>
+			<% } %>
+		</script>
+	
 	</body>
 </html>

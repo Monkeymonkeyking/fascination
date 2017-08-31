@@ -18,11 +18,11 @@ strong, b { font-weight: bold; }
 
 div, p { display: block; }
 
-.header { width: 100%; height: 70px; background: #E0E0E0; }
-.header .wrap { padding: 15px 0 5px 0; width: 1200px; height: 70px; margin: 0 auto; }
-.header .wrap .logo { position: relative; float: left; }
-.header .wrap .logo a { width: 195px; height: 50px; background: url(../images/logo.png) no-repeat; }
-.header .wrap .logo span { color: #008842; left: 240px; font-size: 26px; font-weight: bolder; position: absolute; top: 6px; white-space: nowrap; }
+.top { width: 100%; height: 70px; background: #E0E0E0; }
+.top .wrap { padding: 15px 0 5px 0; width: 1200px; height: 70px; margin: 0 auto; }
+.top .wrap .logo { position: relative; float: left; }
+.top .wrap .logo a { width: 195px; height: 50px; background: url(../images/logo.png) no-repeat; }
+.top .wrap .logo span { color: #008842; left: 240px; font-size: 26px; font-weight: bolder; position: absolute; top: 6px; white-space: nowrap; }
 
 .bigbox { width: 100%; height: 730px; background: #f7f8f9; overflow: hidden; position: relative; }
 .bigbox .smalllogin { position: absolute; width: 160px; height: 15px; margin-top: 40px; margin-left: 1035px; }
