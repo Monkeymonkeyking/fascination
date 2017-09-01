@@ -68,16 +68,6 @@
 	
 		<!--初始购物车-->
 		<div class="cart-list" id="theInsulationCan">
-			<!--<div>
-				<span><label><input type="checkbox" id="chk_all">全选</label></span>
-				<span>商品编号</span>
-				<span>图片</span>
-				<span>描述</span>
-				<span>单价</span>
-				<span>数量</span>
-				<span>小计</span>
-				<span>操作</span>
-			</div>-->
 			<div class="cart_body"></div>
 			合计金额：<span class="total">0</span>
 		</div>
@@ -94,13 +84,12 @@
 				<span><img src="<%= prod.imgSrc %>"></span>
 				<span class="cart-t-info"><%= prod.title %></span>
 				<span class="price"><%= prod.price %></span>
-				<span><span class="minus">-</span><input type="text" size="1" value="<%= prod.amount %>" class="amount"><span class="add">+</span></span>
+				<span class="kuang"><span class="minus">-</span><input type="text" size="1" value="<%= prod.amount %>" class="amount"><span class="add" style="margin-left: 0px;">+</span></span>
 				<span class="sub"><%= prod.price * prod.amount %></span>
-				<span><a href="javascript:void(0)">删除</a></span>
+				<span class="delete"><a href="javascript:void(0)">删除</a></span>
 			</div>
 			<% } %>
 		</script>
-
 
 	</body>
 </html>
